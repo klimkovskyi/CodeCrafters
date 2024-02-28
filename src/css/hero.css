@@ -1,0 +1,75 @@
+body {
+    font-family: 'Inter Tight', sans-serif;
+    color: #fbfbfb;
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0, auto;
+}
+
+@media screen and (max-width: 374px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+        max-width: 375px;
+    }
+}
+.hero {
+    display: inline-flex;
+    padding-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #576F35;
+    min-width: 375px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    margin: 0, auto;
+}
+
+.hero-text {
+    font-weight: 500;
+    line-height: 1.28;
+    margin: 0, auto;
+    
+}
+
+.hero-background {
+    width: 375px;
+        height: 370px;
+        background-image: linear-gradient(0deg, rgba(20, 20, 20, 0.20) 0%, rgba(20, 20, 20, 0.20) 100%),
+            url(../img/hero@1x-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .hero-background {
+        background-image: linear-gradient(0deg, rgba(20, 20, 20, 0.20) 0%, rgba(20, 20, 20, 0.20) 100%),
+                url(../img/hero@2x-mobile.jpg);
+    }
+}
