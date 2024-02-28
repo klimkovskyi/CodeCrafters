@@ -1,0 +1,170 @@
+:root {
+  --text: #141414;
+  --background: #576f35;
+  --background-2: #7a3145;
+  --main-text: #fbfbfb;
+  --font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+  background: var(--background);
+}
+
+@media screen and (min-width: 768px) {
+  .svg_logo {
+    width: 194px;
+    height: 18px;
+  }
+  .close_button {
+    width: 40px;
+    height: 40px;
+  }
+  .open_button {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header .container {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu .link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #3f51b5;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 8px;
+  align-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  border: 1px solid rgba(251, 251, 251, 0.4);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.button_shop_now {
+  border: var(--background-2);
+  background: var(--background-2);
+  border-radius: 30px;
+  padding: 16px 32px;
+  margin-left: 20px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+}
+
+.mobile-menu li {
+  display: inline-block;
+  margin-right: 8px;
+  align-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu a {
+  border: 1px solid rgba(251, 251, 251, 0.4);
+  border-radius: 12px;
+  padding: 12px;
+}
