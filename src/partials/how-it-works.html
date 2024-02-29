@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./slyles.css" />
+  </head>
+  <body>
+    <section class="sec-howitworks">
+      <h2 class="visually-hidden">How it works</h2>
+      <div class="cooking-pic">
+        <picture>
+          <source
+            media="(min-width: 1280px )"
+            srcset="
+              ./img/Rectangle-dec-1x-min.png 1x,
+              ./img/Rectangle-dec-2x-min.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px )"
+            srcset="
+              ./img/Rectangle-tab-1x-min.png 1x,
+              ./img/Rectangle-tab-2x-min.png 2x
+            "
+          />
+          <source
+            media="(min-width: 320px )"
+            srcset="
+              ./img/Rectangle-mob-1x-min.png 1x,
+              ./img/Rectangle-mob-2x-min.png 2x
+            "
+          />
+          <img
+            srcset="
+              ./img/rectangle-dec-1x-min.png 1x,
+              ./img/rectangle-dec-2x-min.png 2x
+            "
+            src="./img/Rectangle-mob-1x.png"
+            alt="cooking"
+          />
+        </picture>
+      </div>
+      <div class="order-steps">
+        <div class="order-paragraf">
+          <p class="order-title">
+            To order your
+            <span class="order-title-span">vegetable</span> basket, simply
+            follow these <span class="order-title-span">easy steps</span>
+          </p>
+          <p class="order-text">
+            Our baskets are assembled with care and delivered straight to your
+            doorstep, so you can enjoy the taste of fresh fruit without ever
+            leaving your home.
+          </p>
+        </div>
+        <ol class="order-list">
+          <li class="order-item">
+            Just choose the <span class="order-item-span">vegetable</span> you
+            want to order by clicking on the checkboxes
+            <span class="order-item-span">next to it</span>.
+          </li>
+          <li class="order-item">
+            Click on <span class="order-item-span">the basket</span> and fill
+            out the form.
+          </li>
+          <li class="order-item">
+            Sit back and relax! Your
+            <span class="order-item-span">fresh vegetables</span> basket will be
+            delivered.
+          </li>
+        </ol>
+      </div>
+    </section>
+  </body>
+</html>
