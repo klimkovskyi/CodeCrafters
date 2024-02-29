@@ -1,39 +1,9 @@
-body {
-    font-family: 'Inter Tight', sans-serif;
-    color: #fbfbfb;
-}
-
-.container {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-@media screen and (max-width: 374px) {
-    .container {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 375px) {
-    .container {
-        max-width: 375px;
-    }
-}
-@media screen and (min-width: 768px) {
-    .container {
-        padding-left: 32px;
-        padding-right: 32px;
-        max-width: 768px;
-    }
-}
-
 @media screen and (min-width: 1280px) {
     .container {
-        padding-left: 100px;
-        padding-right: 100px;
-        width: 1280px;
+        padding-right: 0;
     }
 }
+
 .hero {
     width: 100%;
     display: inline-flex;
@@ -45,12 +15,21 @@ body {
     min-width: 375px;
 }
 
+@media screen and (min-width: 1280px) {
+    .hero {
+        padding-top: 0;
+        flex-direction:row;
+        display: inline-flex;
+        align-items: flex-end;
+        gap: 28px;
+    }
+}
+
 .hero-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    
 }
 
 @media screen and (min-width: 768px) {
@@ -61,20 +40,32 @@ body {
     }
 }
 
+@media screen and (min-width: 1280px) {
+    .hero-content {
+        padding-bottom: 50px;
+        gap: 128px;
+        margin-top: 154px;
+    }
+}  
+
 .hero-title {
     font-size: 48px;
     font-weight: 600;
     line-height: 1;
     letter-spacing: -0.015em;
     text-transform: uppercase;
-    margin: 0, auto;
+   
 }
 
 @media screen and (min-width: 768px) {
     .hero-title {
         font-size: 76px;
     }
-
+}
+@media screen and (min-width: 1280px) {
+    .hero-title{
+        
+    }
 }
 
 .hero-text {
@@ -91,12 +82,18 @@ body {
     }
 }
 
+@media screen and (min-width: 1280px) {
+    .hero-text {
+        width: 472px;
+    }
+}
+
 .hero-background {
     margin-top: 40px;
     width: 375px;
     height: 370px;
     background-image: linear-gradient(0deg, rgba(20, 20, 20, 0.20) 0%, rgba(20, 20, 20, 0.20) 100%),
-            url(../img/hero@1x-mobile.jpg);
+        url(../img/hero@1x-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -124,4 +121,21 @@ body {
         background-image: linear-gradient(0deg, rgba(20, 20, 20, 0.20) 0%, rgba(20, 20, 20, 0.20) 100%),
             url(../img/hero@2x-tablet.jpg);
         }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero-background {
+        margin-top: 0;
+        width: 650px;
+        height: 800px;
+        background-image: linear-gradient(0deg, rgba(20, 20, 20, 0.20) 0%, rgba(20, 20, 20, 0.20) 100%),
+            url(../img/hero@1x-desktop.jpg);
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px) {
+    .hero-background {
+        background-image: linear-gradient(0deg, rgba(20, 20, 20, 0.20) 0%, rgba(20, 20, 20, 0.20) 100%),
+            url(../img/hero@2x-desktop.jpg);
+    }
 }
