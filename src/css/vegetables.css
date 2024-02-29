@@ -3,8 +3,6 @@
     list-style-type: none; 
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
-    column-gap: 20px;
 }
 
 .vegetables {
@@ -62,7 +60,6 @@
 
     /*-----768-----*/    
     @media screen and (min-width: 768px) {
-
         .top-item {
             font-size: 64px;
             line-height: 100%;
@@ -74,13 +71,14 @@
         }
 
         .vegetables-list {
+            flex-wrap: wrap;
+            row-gap: 40px;
+            column-gap: 20px;
             display: flex;
             flex-direction: column;
         }
 
         .list-item {
-            display: flex;
-            flex-direction: column;
             width: 342px;
             flex-basis: calc(( 100% - 20px ) / 2);
         }
@@ -88,7 +86,6 @@
 
     /*-----1280-----*/ 
     @media screen and (min-width: 1280px) {
-
         .top-item { 
             width: 508px;
             font-size: 64px;
