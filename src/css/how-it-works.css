@@ -18,13 +18,12 @@ ol {
 
 .cooking-pic {
     background: #7A3145;
-    /* background: linear-gradient(0deg, rgba(20, 20, 20, 0.30) 0%, rgba(20, 20, 20, 0.30) 100%); */
-
 
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     gap: 10px;
     padding: 40px 20px;
+    max-width: 375px;
 }
 
 
@@ -33,11 +32,11 @@ ol {
     display: flex;
     padding: 80px 20px;
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     gap: 40px;
+    max-width: 375px;
 }
 
-.order-paragraf {}
 
 .order-title {
     color: #FBFBFB;
@@ -45,7 +44,7 @@ ol {
     font-size: 28px;
     font-weight: 600;
     line-height: 1.0;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
 
     margin-bottom: 20px;
@@ -58,7 +57,7 @@ ol {
     font-size: 28px;
     font-weight: 600;
     line-height: 28px;
-    letter-spacing: 0.15em;
+    letter-spacing: -0.42px;
     text-transform: uppercase;
 }
 
@@ -69,7 +68,9 @@ ol {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.29;
+
 }
+
 
 .order-list {
     display: flex;
@@ -78,6 +79,7 @@ ol {
     margin: 0 auto;
 
     counter-reset: number 0;
+    margin-top: 40px;
 
 }
 
@@ -85,11 +87,15 @@ ol {
     position: relative;
     border-radius: 15px;
     background: #FBFBFB;
+    justify-content: center;
+    align-items: center;
 
+
+    /* width: 208px; */
     /* max-width: 375px; */
-    /* height: 76px; */
+    height: 76px;
     padding: 12px 27px 12px 24px;
-    padding-left: 50px;
+    padding-left: 80px;
 
     color: rgba(20, 20, 20, 0.60);
     font-family: "Inter Tight",sans-serif;
@@ -98,15 +104,17 @@ ol {
     line-height: 1.17;
     letter-spacing: 0.02em;
     counter-increment: number;
+
 }
 
 .order-item::before {
     content: counter(number);
     
     position: absolute;
-    top: 5px;
-    left: 24px;
+    top: 10px;
+    left: 18px;
     padding: 11px 14px 11px 15px;
+    flex-shrink: 0;
 
 
 
@@ -139,10 +147,26 @@ ol {
 @media screen and (min-width:768px) {
     .cooking-pic {
         padding: 100px 64px;
+        max-width: 768px;
     }
 
     .order-steps {
         padding: 100px 159px;
+        max-width: 768px;
+    }
+    .order-list{
+        margin-top: 50px;
+    }
+    .order-item{
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.02em;
+    }
+    .order-item-span{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.25;
+            letter-spacing: 0.02em;
     }
 
 }
@@ -150,14 +174,39 @@ ol {
 @media screen and (min-width:1280px) {
     .cooking-pic {
         padding: 100px;
+        /* max-width: 1280px; */
     }
 
-    /* .order-steps{
+    .order-steps{
+        width: 650px;
         padding-left: 100px ;
         padding-right: 100px;
-    } */
-    .container {
-        display: flex;
+        /* padding: 100px; */
+
     }
+    .sec-howitworks{
+        display: flex;
+
+    }
+    .order-steps-wrap{
+        width: 450px;
+    }
+
+.order-title{
+    font-size: 32px;
+    line-height: 32px;
+        /* 100% */
+    letter-spacing: -0.48px;
+
+}
+.order-title-span{
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.48px;
+}
+.order-text{
+    font-size: 16px;
+    line-height: 1.25;
+}
 
 }
