@@ -1,3 +1,7 @@
+.container {
+    min-width: 375px;
+}
+
 .vegetables-list {
     width: 100%;
     margin: 0;
@@ -62,6 +66,10 @@
 
     /*-----768-----*/    
     @media screen and (min-width: 768px) {
+        .container {
+            width: 768px;
+        }
+
         .top-item {
             font-size: 64px;
             line-height: 100%;
@@ -79,6 +87,10 @@
 
     /*-----1280-----*/ 
     @media screen and (min-width: 1280px) {
+        .container {
+            width: 1280px;
+        }
+
         .top-item { 
             width: 508px;
             font-size: 64px;
