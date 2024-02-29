@@ -14,6 +14,8 @@
   display: inline-block;
   margin-left: -10px;
   margin-right: -10px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 12px;
   color: #fbfbfb;
   background-color: #576f35;
@@ -30,6 +32,8 @@
   .advertisment-wrap {
     margin-left: -16px;
     margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -40,5 +44,7 @@
   .advertisment-wrap {
     margin-left: -13px;
     margin-right: -13px;
+    padding-left: 13px;
+    padding-right: 13px;
   }
 }
