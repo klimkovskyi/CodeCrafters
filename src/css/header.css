@@ -56,15 +56,14 @@ body {
   display: flex;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   .menu {
     display: none;
   }
 }
 
 .menu .link {
-  padding: 10px;
-  color: inherit;
+  padding: 12px;
   text-decoration: none;
 }
 
@@ -83,7 +82,7 @@ body {
   outline: none;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1280px) {
   .menu-toggle {
     display: none;
   }
@@ -96,7 +95,7 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: var(--background-2);
   z-index: 999;
 
   transform: translateX(100%);
@@ -111,20 +110,26 @@ body {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: var(--main-text);
+}
+
+.menu-container.js-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-menu {
+  display: grid;
   padding: 0;
-  margin: 0;
   list-style: none;
-  display: inline-block;
+  place-items: center;
 }
 
 .mobile-menu .link {
   display: block;
   padding: 10px;
-  color: #fff;
+  color: var(--main-text);
 }
 
 .menu li {
@@ -142,29 +147,45 @@ body {
 }
 
 .button_shop_now {
-  border: var(--background-2);
+  border: 1px solid rgba(251, 251, 251, 0.2);
   background: var(--background-2);
   border-radius: 30px;
   padding: 16px 32px;
-  margin-left: 20px;
+  margin-left: 12px;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 125%;
   letter-spacing: -0.02em;
-  color: #fbfbfb;
+  color: var(--main-text);
+  width: 157px;
+  height: 52px;
 }
 
 .mobile-menu li {
-  display: inline-block;
-  margin-right: 8px;
-  align-content: center;
-  display: flex;
+  margin-top: 8px;
   align-items: center;
 }
 
 .mobile-menu a {
   border: 1px solid rgba(251, 251, 251, 0.4);
   border-radius: 12px;
-  padding: 12px;
+  white-space: pre;
+  width: 114px;
+  height: 44px;
+}
+
+.mobile-menu .button_shop_now {
+  color: var(--main-text);
+  margin: 8px;
+}
+
+.mobile-menu .link:active,
+.mobile-menu .button_shop_now:active {
+  background: var(--main-text);
+  color: var(--background-2);
+}
+
+.menu .button_shop_now:active {
+  background: #622133;
 }
