@@ -3,6 +3,7 @@
     list-style-type: none; 
     display: flex;
     flex-direction: column;
+    row-gap: 40px;
 }
 
 .vegetables {
@@ -79,8 +80,8 @@
         }
 
         .list-item {
-            width: 342px;
-            flex-basis: calc(( 100% - 20px ) / 2);
+            
+            width: calc(( 100% - 20px ) / 2);
         }
     }
 
@@ -96,6 +97,14 @@
             width: 626px;
             font-size: 16px;
             line-height: 125%;
+        }
+
+        .vegetables-list {
+            flex-wrap: wrap;
+            row-gap: 40px;
+            column-gap: 20px;
+            display: flex;
+            flex-direction: column;
         }
 
         .list-item {
