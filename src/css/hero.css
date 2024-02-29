@@ -19,6 +19,21 @@ body {
         max-width: 375px;
     }
 }
+@media screen and (min-width: 768px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        padding-left: 100px;
+        padding-right: 100px;
+        width: 1280px;
+    }
+}
 .hero {
     width: 100%;
     display: inline-flex;
@@ -35,7 +50,15 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    margin-bottom: 40px;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .hero-content .hero-title {
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .hero-title {
@@ -47,13 +70,29 @@ body {
     margin: 0, auto;
 }
 
+@media screen and (min-width: 768px) {
+    .hero-title {
+        font-size: 76px;
+    }
+
+}
+
 .hero-text {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.28571;
 }
 
+@media screen and (min-width: 768px) {
+    .hero-text {
+        font-size: 16px;
+        line-height: 1.25;
+        width: 603px;
+    }
+}
+
 .hero-background {
+    margin-top: 40px;
     width: 375px;
     height: 370px;
     background-image: linear-gradient(0deg, rgba(20, 20, 20, 0.20) 0%, rgba(20, 20, 20, 0.20) 100%),
@@ -68,4 +107,21 @@ body {
         background-image: linear-gradient(0deg, rgba(20, 20, 20, 0.20) 0%, rgba(20, 20, 20, 0.20) 100%),
                 url(../img/hero@2x-mobile.jpg);
     }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-background {
+        margin-top: 50px;
+        width: 768px;
+        height: 539px;
+        background-image: linear-gradient(0deg, rgba(20, 20, 20, 0.20) 0%, rgba(20, 20, 20, 0.20) 100%),
+                url(../img/hero@1x-tablet.jpg);
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px) {
+    .hero-background {
+        background-image: linear-gradient(0deg, rgba(20, 20, 20, 0.20) 0%, rgba(20, 20, 20, 0.20) 100%),
+            url(../img/hero@2x-tablet.jpg);
+        }
 }
