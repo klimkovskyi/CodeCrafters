@@ -43,7 +43,7 @@ ol {
     font-size: 28px;
     font-weight: 600;
     line-height: 28px;
-    letter-spacing: 0.04em;
+    /* letter-spacing: 0.04em; */
     text-transform: uppercase;
     max-width: 335px;
 
@@ -61,7 +61,7 @@ ol {
     text-transform: uppercase;
 }
 
-.order-text {
+.order-text-parag {
     color: #FBFBFB;
     font-family: "Inter Tight",sans-serif;
     font-size: 14px;
@@ -183,7 +183,7 @@ ol {
     letter-spacing: -0.48px;
     display: inline-block;
 }
-.order-text{
+.order-text-parag{
     font-size: 16px;
     line-height: 1.25;
 }
