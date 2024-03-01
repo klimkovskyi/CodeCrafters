@@ -5,19 +5,18 @@
 }
 
 .hero {
-    display: inline-flex;
+    display: flex;
     padding-top: 100px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #576F35;
-    max-width: 375px;
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
     .hero {
         padding-top: 122px;
-        max-width: 768px;
     }
 }
 
@@ -25,12 +24,11 @@
     .hero {
         padding-top: 0;
         flex-direction: row;
-        display: inline-flex;
         align-items: flex-end;
         gap: 28px;
-        max-width: 1440px;
     }
 }
+
 
 .hero-content {
     display: flex;
@@ -96,8 +94,9 @@
 }
 
 .hero-background {
+    flex-shrink: 0;
     margin-top: 40px;
-    width: 375px;
+    width: 100%;
     height: 370px;
     background-image: linear-gradient(0deg, rgba(20, 20, 20, 0.20) 0%, rgba(20, 20, 20, 0.20) 100%),
         url(../img/hero@1x-mobile.jpg);
@@ -116,7 +115,7 @@
 @media screen and (min-width: 768px) {
     .hero-background {
         margin-top: 50px;
-        width: 768px;
+        width: 100%;
         height: 539px;
         background-image: linear-gradient(0deg, rgba(20, 20, 20, 0.20) 0%, rgba(20, 20, 20, 0.20) 100%),
             url(../img/hero@1x-tablet.jpg);
@@ -133,7 +132,7 @@
 @media screen and (min-width: 1280px) {
     .hero-background {
         margin-top: 0;
-        width: 650px;
+        width: 50%;
         height: 800px;
         background-image: linear-gradient(0deg, rgba(20, 20, 20, 0.20) 0%, rgba(20, 20, 20, 0.20) 100%),
             url(../img/hero@1x-desktop.jpg);
