@@ -1,92 +1,74 @@
-.div-footer-container {
-    padding: 40px 20px;
+.footer {
+    background: #7a3145;
+    display: inline-flex;
+    padding: 40px 0;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.footer-logo {
-    margin-top: 2px;
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
 }
 
-.footer-p-container {
-    margin-top: 16px;
+.footer-logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
 }
 
 .footer-p {
-    color: #fbfbfb;
+    font-weight: 500;
+    line-height: 1.28571;
 }
 
-.footer-list {
-    margin-top: 40px;
-    width: 155px;
-    height: 112px;
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
 }
 
-
-.footer-ul {
-    list-style-type: none;
-
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
 }
 
-.footer-li1 {
-    margin-top: 0;
-}
-
-.footer-how-it-works {
-    text-decoration: none;
-    font-family: var(--font-family);
-    font-weight: 600;
+.footer-list-li {
     font-size: 28px;
-    line-height: 100%;
-    letter-spacing: -0.01em;
-    color: var(--main-text);
-    color: #fbfbfb;
-}
-
-.footer-li2 {
-    margin-top: 14px;
-}
-
-.footer-vegatables {
-    text-decoration: none;
-    font-family: var(--font-family);
     font-weight: 600;
-    font-size: 28px;
-    line-height: 100%;
-    letter-spacing: -0.01em;
-    color: var(--main-text);
-    color: #fbfbfb;
+    line-height: 1;
+    letter-spacing: -0.015;
 }
 
-.footer-li3 {
-    margin-top: 14px;
-}
-
-.footer-reviews {
-    text-decoration: none;
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 100%;
-    letter-spacing: -0.01em;
-    color: var(--main-text);
-    color: #fbfbfb;
-}
-
-.footer-address-div {
-    margin-top: 40px;
+.page-address {display: flex;
     width: 215px;
-    height: 68px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
 }
 
-.footer-address {
-    color: #fbfbfb;
+.footer-link {
+font-weight: 600;
+line-height: 1.28571;
+letter-spacing: -0.015;
 }
 
-.footer-call{
-    text-decoration: none;
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 129%;
-    letter-spacing: -0.01em;
-    color: var(--main-text);
+.footer-privpol {
+    margin-top: 80px;
+    display: flex;
+    align-items: flex-end;
+    gap: 49px;
+}
+
+.footer-privpol-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
