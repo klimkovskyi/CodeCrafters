@@ -1,0 +1,40 @@
+.footer-logo {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--main-text);
+    margin-left: 100px;
+    margin-bottom: 238px;
+
+    height: 103px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-p {
+    color: #fbfbfb;
+}
+
+.footer-list {
+    margin-left: 667px;
+    margin-bottom: 309px;
+    margin-right: 436px;
+}
+
+
+.footer-li {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: var(--main-text);
+    padding-top: 25px;
+}
+
+.footer-how-it-works {
+    padding-top: 0px;
+}
+
+.footer-vegatables {}
