@@ -40,6 +40,8 @@
   flex-direction: column;
   gap: 40px;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .order-form-title {
@@ -154,7 +156,6 @@
   border-radius: 30px;
   padding: 40px 20px;
   max-width: 335px;
-  /* height: 465px; */
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -207,17 +208,10 @@
   margin-right: 8px;
 }
 
-/* @media screen and (max-width: 332px) {
-  .social-decoration::before {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .social-decoration::after {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-} */
+.order-social-container {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* ------------- TABLET DESIGN ------------- */
 
