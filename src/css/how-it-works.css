@@ -20,8 +20,8 @@ ol {
     background: #7A3145;
 
     display: flex;
-    /* align-items: flex-start; */
     gap: 10px;
+
     padding: 40px 20px;
     max-width: 375px;
 }
@@ -32,9 +32,8 @@ ol {
     display: flex;
     padding: 80px 20px;
     flex-direction: column;
-    /* align-items: flex-start; */
     gap: 40px;
-    max-width: 375px;
+    /* max-width: 375px; */
 }
 
 
@@ -43,9 +42,10 @@ ol {
     font-family: "Inter Tight",sans-serif;
     font-size: 28px;
     font-weight: 600;
-    line-height: 1.0;
+    line-height: 28px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    max-width: 335px;
 
     margin-bottom: 20px;
 
@@ -61,16 +61,13 @@ ol {
     text-transform: uppercase;
 }
 
-
 .order-text {
     color: #FBFBFB;
     font-family: "Inter Tight",sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.29;
-
 }
-
 
 .order-list {
     display: flex;
@@ -79,7 +76,6 @@ ol {
     margin: 0 auto;
 
     counter-reset: number 0;
-    margin-top: 40px;
 
 }
 
@@ -87,12 +83,7 @@ ol {
     position: relative;
     border-radius: 15px;
     background: #FBFBFB;
-    justify-content: center;
-    align-items: center;
 
-
-    /* width: 208px; */
-    /* max-width: 375px; */
     height: 76px;
     padding: 12px 27px 12px 24px;
     padding-left: 80px;
@@ -115,15 +106,12 @@ ol {
     left: 18px;
     padding: 11px 14px 11px 15px;
     flex-shrink: 0;
-
-
-
+    
     background-color: #7A3145;
     /* width: 42px;
     height: 42px; */
     border-radius: 50%;
-    border: 3px solid rgba(255, 211, 211, 0.76);
-    /* display: block; */
+    border: 5px solid rgba(255, 211, 211, 0.76);
 
     color: #FBFBFB;
     font-family: "Inter Tight",sans-serif;
@@ -154,9 +142,6 @@ ol {
         padding: 100px 159px;
         max-width: 768px;
     }
-    .order-list{
-        margin-top: 50px;
-    }
     .order-item{
             font-size: 16px;
             line-height: 1.25;
@@ -168,45 +153,42 @@ ol {
             line-height: 1.25;
             letter-spacing: 0.02em;
     }
+        .order-title {
+            font-size: 32px;
+            line-height: 32px;
+            /* 100% */
+            letter-spacing: -0.48px;
+            width: 450px;
+    
+        }
 
 }
 
 @media screen and (min-width:1280px) {
     .cooking-pic {
         padding: 100px;
-        /* max-width: 1280px; */
+        flex-shrink: 0;
     }
 
     .order-steps{
         width: 650px;
         padding-left: 100px ;
         padding-right: 100px;
-        /* padding: 100px; */
-
-    }
-    .sec-howitworks{
-        display: flex;
-
-    }
-    .order-steps-wrap{
-        width: 450px;
     }
 
-.order-title{
-    font-size: 32px;
-    line-height: 32px;
-        /* 100% */
-    letter-spacing: -0.48px;
 
-}
 .order-title-span{
     font-size: 32px;
     line-height: 32px;
     letter-spacing: -0.48px;
+    display: inline-block;
 }
 .order-text{
     font-size: 16px;
     line-height: 1.25;
+}
+.container{
+    display: flex;
 }
 
 }
