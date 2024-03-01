@@ -1,0 +1,192 @@
+/*===MOBILE Reviews section===*/
+
+.reviews {
+  padding-bottom: 80px;
+  background-color: #fbfbfb;
+}
+
+.reviews-title {
+  font-family: Inter Tight;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  color: #141414;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.accent {
+  font-family: Studio Pro;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  color: #576f35;
+}
+.accent:hover,
+.accent:focus {
+  color: orange;
+  transition: color, 250ms ease-in-out, background-color 250ms ease-in-out,
+    cubic-bezier(0.4, 0, 0.2, 1);}
+
+    .reviews-dsc {
+  font-family: Inter Tight;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #141414;
+  /*margin-bottom: 40px;*/
+}
+
+.reviews-list {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.reviews-item{
+  position: relative;
+  width: 335px;
+  background-color: #fff;
+  border-radius: 24px;
+  border: 1px solid #7a3145;
+  padding: 20px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* можна спробувати box-shadow: 0px 10px 100px 0px*/
+}
+reviews-item:not(:first-child) {
+  display: block;
+}
+.reviews-item:not(:first-child) {
+  display: none;
+}
+.reviews-foto {
+  margin-bottom: 20px;
+  position: absolute;
+  top: 0px;
+  padding: 12px 12px;
+
+  left: calc(50% - 30px);
+}
+/*.reviews-wrapper {
+    padding: 24px 16px 20px 16px;}*/
+
+.reviews-user {
+  margin-top: 40px;
+  margin-bottom: 8px;
+  font-family: Inter Tight;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #040306;
+}
+
+.reviews-message {
+  font-family: Inter Tight;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #04030666;
+}
+
+/* ==============================Mediarequests====================================== */
+
+/* ===================================Tablet============================================ */
+
+@media only screen and (min-width: 768px) {
+  /*.reviews {
+    padding: 100px 32px 100px 32px;
+  }*/
+    .reviews {
+      padding-bottom: 100px 0;
+  }
+.reviews-container{
+  width: 553px;
+}
+  .reviews-title {
+    margin-bottom: 20px;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 64px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+
+  .accent {
+    font-family: Studio Pro;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.015em;
+    text-align: left;
+  }
+
+  .reviews-dsc {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .reviews-list {
+    gap: 18px;
+  }
+  .reviews-user {
+    font-size: 18px;
+  }
+  .reviews-item {
+
+    margin-top: 50px;
+    gap: 18px;
+    width: calc((100% - 18px * 1) / 2);
+  }
+
+  .reviews-item:not(:last-child) {
+    display: block;
+    }
+    reviews-item:not(:last-child) {
+      display: none;
+      }
+
+  .reviews-message {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+    /*.reviews-wrapper {
+
+      padding: 24px 20px 42px 20px;}*/
+}
+/* =========================================Desktop====================================== */
+
+@media only screen and (min-width: 1280px) {
+  /*.reviews {
+    padding: 100px 100px 100px 100px;
+  }*/
+  .reviews-list {
+    gap: 25px;
+  }
+  .reviews-item {
+    width: 343px;
+    width: calc((100% - 25px * 2) / 3);
+  }
+  .reviews-item:nth-child(3) {
+    display: block;
+  }
+  .reviews-message
+{font-family: Inter Tight;
+font-size: 16px;
+font-weight: 500;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: center;}
+}
