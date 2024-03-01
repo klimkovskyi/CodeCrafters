@@ -99,14 +99,16 @@ reviews-item:not(:first-child) {
 /* ===================================Tablet============================================ */
 
 @media only screen and (min-width: 768px) {
-
+  .reviews {
+    padding: 100px 32px 100px 32px;
+  }
     .reviews {
       padding-bottom: 80px;
   }
-
+.reviews-container{
+  width: 553px;
+}
   .reviews-title {
-    display: flex;
-    flex-wrap: wrap;
     margin-bottom: 20px;
     font-size: 64px;
     font-weight: 600;
@@ -129,7 +131,7 @@ reviews-item:not(:first-child) {
     font-size: 16px;
     line-height: 20px;
   }
-  .reviews-list {
+  reviews-list {
     gap: 50px;
 
   }
@@ -137,9 +139,10 @@ reviews-item:not(:first-child) {
     font-size: 18px;
   }
   .reviews-item {
+    display: flex;
+    flex-direction: row;
     margin-top: 50px;
     gap: 18px;
-width: 100%;
     width: calc((100% - 18px * 1) / 2);
   }
 
@@ -166,7 +169,7 @@ width: 100%;
     padding: 100px 100px 100px 100px;
   }
   .reviews-item {
-    width: 100%;
+    width: 343px;
     width: calc((100% - 25px * 2) / 3);
   }
   .reviews-item:nth-child(3) {
