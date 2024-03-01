@@ -3,12 +3,28 @@
     list-style-type: none; 
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
+    row-gap: 20px;
+}
+
+.veg-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.list-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .vegetables {
     display: flex;
+    padding: 80px 20px;
     flex-direction: column;
+    align-items: start;
     background-color: #7a3145;
 }
 
@@ -73,15 +89,14 @@
 
         .vegetables-list {
             flex-wrap: wrap;
-            row-gap: 40px;
+            row-gap: 20px;
             column-gap: 20px;
             display: flex;
             flex-direction: column;
         }
 
         .list-item {
-            
-            width: calc(( 100% - 20px ) / 2);
+            flex-basis: calc(( 100% - 20px ) / 2);
         }
     }
 
@@ -101,7 +116,7 @@
 
         .vegetables-list {
             flex-wrap: wrap;
-            row-gap: 40px;
+            row-gap: 20px;
             column-gap: 20px;
             display: flex;
             flex-direction: column;
