@@ -77,4 +77,16 @@
     height: 68px;
 }
 
-.footer-address {}
+.footer-address {
+    color: #fbfbfb;
+}
+
+.footer-call{
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.01em;
+    color: var(--main-text);
+}
