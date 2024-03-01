@@ -18,7 +18,7 @@
       anchors.forEach(anchor => {
         anchor.addEventListener('click', toggleMenu);
       });
-      // Додаємо клас для блокування прокрутки сторінки при відкритті меню на мобільних пристроях
+
       if (window.innerWidth < 768) {
         document.body.classList.add('no-scroll');
       }
@@ -28,11 +28,27 @@
     anchors.forEach(anchor => {
       anchor.removeEventListener('click', toggleMenu);
     });
-    // Знімаємо клас для блокування прокрутки при закритті меню
     document.body.classList.remove('no-scroll');
   };
 
-  function changeLogoAndSymbols() {
+  const handleMenuLinks = () => {
+    const menuLinks = document.querySelectorAll('.link');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetClass = link.getAttribute('href').substring(1);
+        const targetElement = document.querySelector('.' + targetClass);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth',
+          });
+        }
+      });
+    });
+  };
+
+  const changeLogoAndSymbols = () => {
     const svgLogo = document.querySelector('.svg_logo use');
     const closeBtn = document.querySelector('.close_button use');
     const openBtn = document.querySelector('.open_button use');
@@ -47,24 +63,32 @@
       closeBtn.setAttribute('href', './icons.svg#close_menu');
       openBtn.setAttribute('href', './icons.svg#open_menu');
     }
-  }
+  };
+
+  const handleWindowResize = () => {
+    window.addEventListener('resize', () => {
+      changeLogoAndSymbols();
+    });
+  };
+
+  const initialize = () => {
+    handleMenuLinks();
+    handleWindowResize();
+    openMenuBtn.addEventListener('click', toggleMenu);
+    closeMenuBtn.addEventListener('click', toggleMenu);
+
+    window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+      if (!e.matches) {
+        mobileMenu.classList.remove('is-open');
+        menuOverlay.classList.remove('is-open');
+        openMenuBtn.setAttribute('aria-expanded', false);
+        document.body.classList.remove('no-scroll');
+      }
+    });
+  };
 
   window.addEventListener('load', () => {
     changeLogoAndSymbols();
-  });
-
-  window.addEventListener('resize', () => {
-    changeLogoAndSymbols();
-  });
-
-  openMenuBtn.addEventListener('click', toggleMenu);
-  closeMenuBtn.addEventListener('click', toggleMenu);
-
-  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-    if (!e.matches) return;
-    mobileMenu.classList.remove('is-open');
-    menuOverlay.classList.remove('is-open');
-    openMenuBtn.setAttribute('aria-expanded', false);
-    document.body.classList.remove('no-scroll'); // Забезпечуємо, щоб прокрутка розблокувалася на більших екранах
+    initialize();
   });
 })();
