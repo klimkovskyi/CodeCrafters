@@ -1,15 +1,13 @@
-.footer-logo {
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 125%;
-    color: var(--main-text);
-    margin-left: 100px;
-    margin-bottom: 238px;
+.div-footer-container {
+    padding: 40px 20px;
+}
 
-    height: 103px;
-    display: flex;
-    flex-direction: column;
+.footer-logo {
+    margin-top: 2px;
+}
+
+.footer-p-container {
+    margin-top: 16px;
 }
 
 .footer-p {
@@ -17,24 +15,66 @@
 }
 
 .footer-list {
-    margin-left: 667px;
-    margin-bottom: 309px;
-    margin-right: 436px;
+    margin-top: 40px;
+    width: 155px;
+    height: 112px;
 }
 
 
-.footer-li {
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 100%;
-    letter-spacing: -0.01em;
-    color: var(--main-text);
-    padding-top: 25px;
+.footer-ul {
+    list-style-type: none;
+
+}
+
+.footer-li1 {
+    margin-top: 0;
 }
 
 .footer-how-it-works {
-    padding-top: 0px;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: var(--main-text);
+    color: #fbfbfb;
 }
 
-.footer-vegatables {}
+.footer-li2 {
+    margin-top: 14px;
+}
+
+.footer-vegatables {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: var(--main-text);
+    color: #fbfbfb;
+}
+
+.footer-li3 {
+    margin-top: 14px;
+}
+
+.footer-reviews {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: var(--main-text);
+    color: #fbfbfb;
+}
+
+.footer-address-div {
+    margin-top: 40px;
+    width: 215px;
+    height: 68px;
+}
+
+.footer-address {}
