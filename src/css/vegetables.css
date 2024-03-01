@@ -1,136 +1,131 @@
 .vegetables-list {
-    width: 100%;
-    list-style-type: none; 
-    flex-direction: column;
-    display: flex;
-    row-gap: 20px;
+  width: 100%;
+  list-style-type: none;
+  flex-direction: column;
+  display: flex;
+  row-gap: 20px;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .list-cont {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .vegetables {
-    padding: 100px 0;
-    flex-direction: column;
-    align-items: start;
-    background-color: #7a3145;
+  padding: 80px 0;
+  flex-direction: column;
+  align-items: start;
+  background-color: #7a3145;
 }
 
 .top-item {
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 1.05;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .span-item {
-    opacity: 30%;
+  opacity: 30%;
 }
 
 .info-item {
-    margin-bottom: 20px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
 }
 
 .images-p-one {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 1;
-    letter-spacing: -0.01em;
-    color: #7a3145;
-    margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: #7a3145;
+  margin-bottom: 12px;
 }
 
 .images-p-two {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 129%;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #141414;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
 }
 
 .list-item {
-    max-width: 346px;
-    background-color: #fbfbfb;
-    border-radius: 40px;
-    padding: 32px 26px;
-    margin-right: auto;
-    margin-left: auto;
+  max-width: 346px;
+  background-color: #fbfbfb;
+  border-radius: 40px;
+  padding: 32px 26px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
+/*-----MEDIA-----*/
 
-         /*-----MEDIA-----*/
+/*-----768-----*/
+@media screen and (min-width: 768px) {
+  .vegetables {
+    padding: 100px 0;
+  }
+  .top-item {
+    font-size: 64px;
+    line-height: 1;
+    margin-bottom: 50px;
+  }
 
-    /*-----768-----*/    
-    @media screen and (min-width: 768px) {
-        .top-item {
-            font-size: 64px;
-            line-height: 1;
-        }
+  .info-item {
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
 
-        .info-item {
-            margin-bottom: 50px;
-            font-size: 16px;
-            line-height: 1.25;
-        }
+  .vegetables-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 28px;
+    display: flex;
+    justify-content: center;
+  }
 
-        .container {
-            padding-left: 16px;
-        }
+  .list-item {
+    width: calc((100% - 2 * 20px) / 2);
+  }
+}
 
-        .vegetables-list {
-            flex-direction: row;
-            flex-wrap: wrap;
-            column-gap: 20px;
-            row-gap: 28px;
-            display: flex;
-            justify-content: center;
-        }
+/*-----1280-----*/
+@media screen and (min-width: 1280px) {
+  .top-item {
+    width: 508px;
+    margin-bottom: 25px;
+  }
 
-        .list-item {
-            width: calc(( 100% - 2*20px ) / 2);
-        }
-    }
+  .info-item {
+    margin-bottom: 50px;
+    width: 626px;
+  }
 
-    /*-----1280-----*/ 
-    @media screen and (min-width: 1280px) {
-        .top-item { 
-            width: 508px;
-        }
+  .list-item {
+    width: calc((100% - 2 * 21px) / 3);
+  }
 
-        .info-item { 
-            margin-bottom: 50px;
-            width: 626px;
-        }
-
-        .list-item {
-            width: calc(( 100% - 2*21px ) / 3); 
-    } 
-
-    .container {
-        padding-left: 90px;
-    }
-
-        .vegetables-list { 
-            flex-direction: row;
-            flex-wrap: wrap;
-            column-gap: 20px;
-            display: flex;
-    }
+  .vegetables-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    display: flex;
+  }
 }
