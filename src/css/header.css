@@ -44,6 +44,13 @@ body {
   justify-content: space-between;
 }
 
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 .menu {
   display: flex;
   padding: 0;
@@ -243,4 +250,8 @@ body {
 
 .menu .button_shop_now_menu:active {
   background: #622133;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
