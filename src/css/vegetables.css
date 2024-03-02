@@ -73,7 +73,11 @@
   margin-left: auto;
 }
 
-/*-----MEDIA-----*/
+.list-item:hover {
+  box-shadow: 15px 15px 7px #622133;
+  transform: scale(1.03);
+  transition: transform 0.6s;
+}
 
 /*-----768-----*/
 @media screen and (min-width: 768px) {
