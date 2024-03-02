@@ -35,6 +35,7 @@ body {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .page-header .container {
@@ -42,6 +43,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .menu {
@@ -55,7 +63,7 @@ body {
   display: flex;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .menu {
     display: none;
   }
@@ -243,4 +251,8 @@ body {
 
 .menu .button_shop_now_menu:active {
   background: #622133;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
