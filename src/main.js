@@ -32,7 +32,7 @@
   };
 
   const handleMenuLinks = () => {
-    const menuLinks = document.querySelectorAll('.link');
+    const menuLinks = document.querySelectorAll('.link, .footer-list-li');
     menuLinks.forEach(link => {
       link.addEventListener('click', e => {
         e.preventDefault();
