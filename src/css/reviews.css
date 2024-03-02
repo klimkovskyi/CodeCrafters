@@ -18,9 +18,9 @@
   margin-bottom: 20px;
 }
 .accent {
-  font-family: Studio Pro;
+  /* font-family: Studio Pro; */
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 50px;
   letter-spacing: -0.015em;
   text-align: left;
@@ -125,9 +125,9 @@ reviews-item:not(:first-child) {
   }
 
   .accent {
-    font-family: Studio Pro;
+    /* font-family: Studio Pro; */
     font-size: 64px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 64px;
     letter-spacing: -0.015em;
     text-align: left;
