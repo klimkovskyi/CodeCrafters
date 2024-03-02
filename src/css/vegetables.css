@@ -6,12 +6,6 @@
   row-gap: 20px;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .list-cont {
   display: flex;
   flex-direction: column;
@@ -73,11 +67,14 @@
   margin-left: auto;
 }
 
+
 .list-item:hover {
   box-shadow: 15px 15px 7px #622133;
   transform: scale(1.03);
   transition: transform 0.6s;
 }
+
+/*-----MEDIA-----*/
 
 /*-----768-----*/
 @media screen and (min-width: 768px) {

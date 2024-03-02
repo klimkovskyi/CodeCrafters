@@ -1,0 +1,58 @@
+.advertisment {
+  padding: 80px 0;
+}
+.advertisment-title {
+  font-family: 'Inter Tight';
+  max-width: 375px;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+
+  color: #141414;
+  margin-right: auto;
+  margin-left: auto;
+}
+.advertisment-wrap {
+  display: inline-block;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 12px;
+  color: #fbfbfb;
+  background-color: #576f35;
+}
+
+@media screen and (min-width: 768px) {
+  .advertisment {
+    padding: 100px 0;
+  }
+  .advertisment-title {
+    font-size: 64px;
+    line-height: 1.09;
+    max-width: 704px;
+  }
+  .advertisment-wrap {
+    display: block;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advertisment-title {
+    font-size: 76px;
+    line-height: 1.05;
+    max-width: 1054px;
+  }
+  .advertisment-wrap {
+    display: inline;
+    margin-left: -13px;
+    margin-right: -13px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+}
