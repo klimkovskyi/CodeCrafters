@@ -4,6 +4,21 @@
     padding: 40px 0;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: 32px 0;
+}
+}
+
+@media screen and (min-width: 1280px) {
+    .footer {
+        display: flex;
+        padding: 50px 0;
+    }
 }
 
 .footer-section {
@@ -13,16 +28,61 @@
     gap: 40px;
 }
 
+@media screen and (min-width: 768px) {
+    .footer-section {
+        flex-direction: row;
+        gap: 224px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer-section {
+        gap: 302px;
+    }
+}
+
 .footer-logo-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 14px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .footer-logo-text {
+        gap: 25px;
+    }
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__logo {
+        width: 194px;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 8px;
+        height: 18px;
+    }
 }
 
 .footer-p {
     font-weight: 500;
     line-height: 1.28571;
+    max-width: 296px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-p {
+        font-size: 16px;
+        line-height: 1.25;
+        max-width: 265px;
+    }
 }
 
 .footer-block {
@@ -32,11 +92,29 @@
     gap: 40px;
 }
 
+@media screen and (min-width: 768px) {
+    .footer-block {
+        gap: 64px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .footer-block {
+        flex-direction: row;
+        gap: 121px
+    }
+}
+
 .footer-menu {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 14px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-menu {
+        gap: 25px;
+    }
 }
 
 .footer-list-li {
@@ -46,11 +124,24 @@
     letter-spacing: -0.015;
 }
 
-.page-address {display: flex;
-    width: 215px;
+@media screen and (min-width: 768px) {
+    .footer-list-li {
+        font-size: 32px;
+    }
+}
+
+.page-address {
+    display: flex;
+    max-width: 215px;
     flex-direction: column;
     align-items: flex-start;
     gap: 14px;
+}
+
+@media screen and (min-width: 768px) {
+    .page-address {
+        gap: 25px;
+    }
 }
 
 .footer-link {
@@ -59,11 +150,34 @@ line-height: 1.28571;
 letter-spacing: -0.015;
 }
 
+@media screen and (min-width: 768px) {
+    .footer-link {
+        font-size: 18px;
+        line-height: 1.111;
+    }
+}
+
 .footer-privpol {
     margin-top: 80px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     gap: 49px;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-privpol {
+        margin-top: 100px;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer-privpol {
+        margin-top: 125px;
+    }
 }
 
 .footer-privpol-block {
@@ -71,4 +185,54 @@ letter-spacing: -0.015;
     justify-content: center;
     align-items: center;
     gap: 8px;
+    max-width: 171px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-privpol-block {
+        max-width: 704px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer-privpol-block {
+        max-width: 1080px;
+    }
+}
+
+.footer-link-pr {
+    color: rgba(251, 251, 251, 0.50);
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.333;
+        letter-spacing: -0.015;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-link-pr {
+        font-size: 18px;
+        line-height: 1.111;
+    }
+}
+
+.footer-green-harvest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-harvest {
+    color: rgba(251, 251, 251, 0.50);
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.16667;
+        letter-spacing: -0.015;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-harvest {
+        font-size: 18px;
+        line-height: 1.111;
+    }
 }
