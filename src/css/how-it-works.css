@@ -1,7 +1,15 @@
 ol {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
 }
+
+.sec-howitworks{
+    background: linear-gradient(to bottom,
+                #7a3145 0% 44.76%,
+                #576f35 44.76% 100%);
+}
+
 .wraper-sec-howitworks {
     margin: 0 auto;
 }
@@ -20,28 +28,22 @@ ol {
 }
 
 .cooking-pic {
-    background: #7A3145;
-
     display: flex;
-    gap: 10px;
+    justify-content: center;
 
-    padding: 40px 20px;
-    max-width: 375px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-
 
 .order-steps {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    justify-content: center;
 
-    padding: 80px 20px;
-    background: #576F35;
-    max-width: 375px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
 }
-
-
-
 
 .order-title {
     color: #FBFBFB;
@@ -51,10 +53,10 @@ ol {
     line-height: 28px;
     /* letter-spacing: 0.04em; */
     text-transform: uppercase;
-    max-width: 335px;
+    /* width: 335px; */
+    width: 100%;
 
     margin-bottom: 20px;
-
 }
 
 .order-title-span {
@@ -75,32 +77,32 @@ ol {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.29;
+
+    margin-bottom: 40px;
 }
 
 .order-list-howitworks {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
+    align-self: center;
     gap: 20px;
-
-    max-width: 335px;
-    margin: 0 auto;
-    /* vertical-align: middle; */
-
+    /* width: 335px; */
+    width: 100%;
     counter-reset: number 0;
 }
 
 .order-item-howitworks {
     position: relative;
+
     border-radius: 15px;
     background: #FBFBFB;
     
     height: 76px;
-    max-width: 335px;
+    width: 335px;
     padding: 12px 27px 12px 24px;
     padding-left: 80px;
-    margin: 0 auto;
 
     color: rgba(20, 20, 20, 0.60);
     font-family: "Inter Tight",sans-serif;
@@ -112,18 +114,19 @@ ol {
     counter-increment: number;
 }
 
+
 .order-item-howitworks::before {
     content: counter(number);
     
     position: absolute;
-    top: 10px;
-    left: 18px;
-    padding: 11px 14px 11px 15px;
-    flex-shrink: 0;
+    top: 15px;
+    left: 24px;
+    padding-top: 5px;
+    padding-left: 4px;
     
     background-color: #7A3145;
-    /* width: 42px;
-    height: 42px; */
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     border: 5px solid rgba(255, 211, 211, 0.76);
 
@@ -134,6 +137,8 @@ ol {
     line-height: 20px;
     /* 100% */
     letter-spacing: 0.2em;
+    text-align: center;
+
 }
 
 .order-item-span-howitworks {
@@ -143,32 +148,71 @@ ol {
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    display: inline-block;
+    display: inline;
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:374px){
     .container{
         width: 100%;
+    }
+    .sec-howitworks{
+        width: 100%;
+    }
+    .order-item-howitworks{
+        width: 280px;
+    }
+    .order-title{
+        width: 280px;
+    }
+        .order-list-howitworks {
+            width: 280px;
+        }
+    .order-steps{
+        /* margin-top: 40px;
+        margin-bottom: 40px; */
+        width: 280px;
+        padding-top: 0;
+    }
+    .cooking-pic{
+        padding-top: 40px;
+        margin-bottom: 160px;
     }
 
 }
 
 @media screen and (min-width:768px) {
+    .sec-howitworks{
+        background: linear-gradient(to bottom,
+                    #7a3145 0% 54.58%,
+                    #576f35 54.58% 100%);
+    }
     .wraper-sec-howitworks{
-        max-width: 768px;
+        width: 100%;
     margin: 0 auto;
+    }
+    .sec-howitworks > .container{
+        padding: 0;
+        margin: 0;
     }
     
     .cooking-pic {
         padding: 100px 64px;
-        max-width: 768px;
+        /* max-width: 768px; */
+        width: 100%;
     }
+    
     .order-steps {
-        padding: 100px 159px;
-        max-width: 768px;
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 159px;
+        padding-right: 159px;
     }
     .order-list-howitworks{
         width: 450px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
     .order-item-howitworks{
             font-size: 16px;
@@ -187,19 +231,44 @@ ol {
             line-height: 32px;
             /* 100% */
             letter-spacing: -0.48px;
-            width: 450px;
+            /* width: 450px; */
+            width: 100%;
+            margin-bottom: 25px;
+        }
+        .order-title-span{
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 32px;
+                letter-spacing: -0.48px;
+        }
+        .order-text-parag{
+            /* width: 450px; */
+            width: 100%;
+            margin-bottom: 50px;
         }
 
 }
 
 @media screen and (min-width:1280px) {
+    .sec-howitworks{
+        background: linear-gradient(to right,
+                    #7a3145 0% 44.76%,
+                    #576f35 44.76% 100%);
+    }
+    .wraper-sec-howitworks{
+        width: 100%;
+    }
     .cooking-pic {
-        padding: 100px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 0;
+        padding-right: 0;
         flex-shrink: 0;
+        width: 630px;
     }
 
     .order-steps{
-        max-width: 650px;
+        width: 650px;
         padding-left: 100px ;
         padding-right: 100px;
     }
@@ -216,6 +285,9 @@ ol {
 .wraper-sec-howitworks{
     display: flex;
     max-width: 1280px;
+    margin: 0 auto;
+}
+.sec-howitworks > .container{
     margin: 0 auto;
 }
 
