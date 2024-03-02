@@ -1,7 +1,7 @@
 /*===MOBILE Reviews section===*/
 
 .reviews {
-  padding-bottom: 80px;
+  padding: 80px 0;
   background-color: #fbfbfb;
 }
 
@@ -30,9 +30,10 @@
 .accent:focus {
   color: orange;
   transition: color, 250ms ease-in-out, background-color 250ms ease-in-out,
-    cubic-bezier(0.4, 0, 0.2, 1);}
+    cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    .reviews-dsc {
+.reviews-dsc {
   font-family: Inter Tight;
   font-size: 14px;
   font-weight: 500;
@@ -46,9 +47,8 @@
 .reviews-list {
   display: flex;
   flex-wrap: wrap;
-
 }
-.reviews-item{
+.reviews-item {
   position: relative;
   width: 335px;
   background-color: #fff;
@@ -108,12 +108,12 @@ reviews-item:not(:first-child) {
   /*.reviews {
     padding: 100px 32px 100px 32px;
   }*/
-    .reviews {
-      padding-bottom: 100px 0;
+  .reviews {
+    padding: 100px 0;
   }
-.reviews-container{
-  width: 553px;
-}
+  .reviews-container {
+    width: 553px;
+  }
   .reviews-title {
     margin-bottom: 20px;
     font-size: 64px;
@@ -144,7 +144,6 @@ reviews-item:not(:first-child) {
     font-size: 18px;
   }
   .reviews-item {
-
     margin-top: 50px;
     gap: 18px;
     width: calc((100% - 18px * 1) / 2);
@@ -152,17 +151,17 @@ reviews-item:not(:first-child) {
 
   .reviews-item:not(:last-child) {
     display: block;
-    }
-    reviews-item:not(:last-child) {
-      display: none;
-      }
+  }
+  reviews-item:not(:last-child) {
+    display: none;
+  }
 
   .reviews-message {
     font-size: 16px;
     line-height: 22px;
   }
 
-    /*.reviews-wrapper {
+  /*.reviews-wrapper {
 
       padding: 24px 20px 42px 20px;}*/
 }
@@ -182,11 +181,12 @@ reviews-item:not(:first-child) {
   .reviews-item:nth-child(3) {
     display: block;
   }
-  .reviews-message
-{font-family: Inter Tight;
-font-size: 16px;
-font-weight: 500;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: center;}
+  .reviews-message {
+    font-family: Inter Tight;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
 }
