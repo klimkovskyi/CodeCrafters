@@ -74,6 +74,12 @@
     margin-left: auto;
 }
 
+.list-item:hover {
+    box-shadow: 15px 15px 7px #622133;
+    transform: scale(1.03);
+    transition: transform .6s;
+}
+
 
          /*-----MEDIA-----*/
 
