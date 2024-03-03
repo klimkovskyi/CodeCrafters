@@ -49,6 +49,14 @@
   flex-wrap: wrap;
   margin-top: 40px;
 }
+.reviews-list  {
+  transition: transform 250ms;
+  }
+
+  .reviews-list :active {
+  transform: translateY(-30px);
+  }
+
 .reviews-item {
   position: relative;
   max-width: 335px;
@@ -68,6 +76,7 @@ reviews-item:not(:first-child) {
 .reviews-item:not(:first-child) {
   display: none;
 }
+
 .reviews-foto {
   margin-bottom: 20px;
   top: 0px;
