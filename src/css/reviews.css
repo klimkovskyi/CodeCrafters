@@ -49,13 +49,13 @@
   flex-wrap: wrap;
   margin-top: 40px;
 }
-.reviews-list  {
+.reviews-list {
   transition: transform 250ms;
-  }
+}
 
-  .reviews-list :active {
+.reviews-list :active {
   transform: translateY(-30px);
-  }
+}
 
 .reviews-item {
   position: relative;
@@ -81,11 +81,11 @@ reviews-item:not(:first-child) {
   margin-bottom: 20px;
   top: 0px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
-  /*position: absolute;*/
-  /*padding: 12px 12px;*/
-  /*left: calc(50% - 30px);
+/*position: absolute;*/
+/*padding: 12px 12px;*/
+/*left: calc(50% - 30px);
 }*/
 /*.reviews-wrapper {
     padding: 24px 16px 20px 16px;}*/
