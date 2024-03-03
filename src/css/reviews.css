@@ -49,13 +49,13 @@
   flex-wrap: wrap;
   margin-top: 40px;
 }
-.reviews-list {
+/* .reviews-list {
   transition: transform 250ms;
 }
 
 .reviews-list :active {
   transform: translateY(-30px);
-}
+} */
 
 .reviews-item {
   position: relative;
