@@ -121,6 +121,14 @@
   font-weight: 600;
   line-height: 1;
   letter-spacing: -0.015;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+}
+.footer-list-li:hover,
+.footer-list-li:focus {
+  transform: scale(1.05);
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
