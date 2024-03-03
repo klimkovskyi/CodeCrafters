@@ -91,6 +91,7 @@
 @media screen and (min-width: 1280px) {
   .hero-text {
     max-width: 472px;
+    margin-right: 30px;
   }
 }
 
