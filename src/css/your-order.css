@@ -98,6 +98,30 @@
   border-color: #3cbc81;
 }
 
+.text-valid,
+.text-invalid {
+  font-size: 14px;
+  padding-left: 20px;
+  margin-top: 4px;
+  display: none;
+}
+
+.text-valid {
+  color: green;
+}
+
+.text-invalid {
+  color: red;
+}
+
+.order-input:not(:placeholder-shown):valid ~ .text-valid {
+  display: block;
+}
+
+.order-input:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
+}
+
 .order-field-comment {
   margin-bottom: 20px;
 }
