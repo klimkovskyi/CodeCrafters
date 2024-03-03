@@ -1,0 +1,46 @@
+<header class="page-header">
+  <div class="container">
+    <a href="#" class="header__logo">
+      <svg class="svg_logo" width="168" height="16">
+        <use href="./icons.svg#logo"></use>
+      </svg>
+    </a>
+    <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="open_button" width="32" height="32">
+        <use href="./icons.svg#open_menu"></use>
+      </svg>
+    </button>
+
+    <nav class="menu">
+      <ul class="menu">
+        <li><a href="#sec-howitworks" class="link">How It Works</a></li>
+        <li><a href="#vegetables" class="link">Vegetables</a></li>
+        <li><a href="#reviews" class="link">Reviews</a></li>
+      </ul>
+      <button class="button_shop_now_menu">SHOP NOW</button>
+    </nav>
+  </div>
+</header>
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg class="close_button" width="32" height="32">
+      <use href="./icons.svg#close_menu"></use>
+    </svg>
+  </button>
+
+  <nav class="mobile-menu">
+    <ul class="mobile-menu">
+      <li><a href="#sec-howitworks" class="link">How It Works</a></li>
+      <li><a href="#vegetables" class="link">Vegetables</a></li>
+      <li><a href="#reviews" class="link">Reviews</a></li>
+    </ul>
+  </nav>
+  <button class="button_shop_now_mobile_menu">SHOP NOW</button>
+</div>
+<div class="menu-overlay js-menu-overlay"></div>
+<script src=".../main.js"></script>

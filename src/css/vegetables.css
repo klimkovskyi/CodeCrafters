@@ -6,7 +6,6 @@
   row-gap: 20px;
 }
 
-
 .list-cont {
   display: flex;
   flex-direction: column;
@@ -68,6 +67,7 @@
   margin-left: auto;
 }
 
+
 .list-item:hover {
   box-shadow: 15px 15px 7px #622133;
   transform: scale(1.03);
@@ -75,11 +75,13 @@
 }
 
 /*-----MEDIA-----*/
+
 @media screen and (min-width: 310px) and (max-width: 340px) {
   .top-item {
     font-size: 44px;
   }
 }
+
 /*-----768-----*/
 @media screen and (min-width: 768px) {
   .vegetables {
