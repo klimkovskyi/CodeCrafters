@@ -17,7 +17,7 @@
     />
     
     <script type="module" crossorigin src="/CodeCrafters/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/CodeCrafters/assets/index-7b5d24f5.css">
+    <link rel="stylesheet" href="/CodeCrafters/assets/index-a84dac0b.css">
   </head>
   <body>
     <header class="page-header">
@@ -282,7 +282,6 @@
               class="order-input"
               id="user-name"
               placeholder="Full Name"
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
               required
             />
           </div>
@@ -300,6 +299,8 @@
               pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
               required
             />
+            <p class="text-valid">Succes!</p>
+            <p class="text-invalid">Invalid email, try again</p>
           </div>
 
           <div class="order-field order-field-comment">
