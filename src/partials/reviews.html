@@ -59,5 +59,40 @@
 <div class="bot">
   <h3 class="reviews-user">Give us your feedback</h3>
   <div class="question">What did you like best?</div>
-  <div class="question">What would you like to improve in our service??</div>
+  <div class="question">What would you like to improve in our service?</div>
  </div>
+
+ <!-- ------------- Form ------------- -->
+
+ <div class="bot-container">
+  <div class="bot-form-container">
+    <form class="bot-form">
+      <div class="reviewers-field">
+        <label for="reviewers-name" class="reviews visually-hidden"
+          > Name</label
+        >
+        <input
+          type="text"
+          name="reviewers-name"
+          class="reviewers-input"
+          id="reviewers-name"
+          placeholder=" Name"
+          required
+        />
+      </div>
+
+      <div class="box-comment">
+        <label for="reviewers-comment" class="reviews visually-hidden"
+          >Comment</label
+        >
+        <textarea
+          name="reviewers-comment"
+          id="reviewers-comment"
+          class="comment-textarea"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="comment-submit-btn">Send</button>
+    </form>
+  </div>
