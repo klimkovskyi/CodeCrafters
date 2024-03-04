@@ -76,6 +76,12 @@
 
 /*-----MEDIA-----*/
 
+@media screen and (min-width: 310px) and (max-width: 340px) {
+  .top-item {
+    font-size: 44px;
+  }
+}
+
 /*-----768-----*/
 @media screen and (min-width: 768px) {
   .vegetables {
@@ -92,6 +98,7 @@
     font-size: 16px;
     line-height: 1.25;
   }
+
 
   .vegetables-list {
     flex-direction: row;
