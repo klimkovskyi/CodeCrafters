@@ -101,6 +101,7 @@ ol {
     position: relative;
     display: flex;
     align-items: center;
+    overflow-x: hidden;
 
     border-radius: 15px;
     background: #fbfbfb;
