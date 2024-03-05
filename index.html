@@ -16,9 +16,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     
     <script type="module" crossorigin src="/CodeCrafters/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/CodeCrafters/assets/index-4d92247c.css">
+    <link rel="stylesheet" href="/CodeCrafters/assets/index-a411213a.css">
   </head>
   <body>
     <header class="page-header">
@@ -152,7 +156,7 @@
 
       <section class="advertisment">
   <div class="container">
-    <h2 class="advertisment-title" data-aos="fade-down-left" data-aos-duration="1500">
+    <h2 class="advertisment-title" data-aos="zoom-in">
       <span class="advertisment-wrap">Discount up to 40%!</span> Taste the
       vitamins and keep your health
     </h2>
@@ -297,8 +301,13 @@
 
       <section class="reviews section" id="reviews">
   <div class="container">
-    <div class="reviews-container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
-      <h2 class="reviews-title" >
+    <div
+      class="reviews-container"
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+    >
+      <h2 class="reviews-title">
         reviews from our
         <span class="accent">customers</span>
       </h2>
@@ -308,11 +317,11 @@
       </p>
     </div>
 
-    <ul class="reviews-list">
+    <!-- <ul class="reviews-list">
       <li class="reviews-item">
         <img
           class="reviews-foto"
-          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFwBBAQEBAQEBAQEBAYGBQYGCAcHBwcIDAkJCQkJDBMMDgwMDgwTERQQDxAUER4XFRUXHiIdGx0iKiUlKjQyNEREXP/CABEIADgAOQMBIgACEQEDEQH/xAAaAAACAwEBAAAAAAAAAAAAAAAGBwMFCAQA/9oACAEBAAAAAN/cQBRXx3Ye5AxRMhdM82sxGoyExRPRpKbA8WVGJRv6UjrK7FfK39ATG3PlnIug5NLm9r5LYzX+gHy/Pf/EABkBAQADAQEAAAAAAAAAAAAAAAQAAQUCBv/aAAgBAhAAAACZTEzzzdSsRr6L2j//xAAZAQACAwEAAAAAAAAAAAAAAAAABQIEBgP/2gAIAQMQAAAAHNCqatamNBRWkp8v/8QAMBAAAQMCBAUEAQMFAQAAAAAAAQIDBAURAAYSIQcTMWFxEBRBUTIiQrEjM1JiY6L/2gAIAQEAAT8AxOqrUS7TQC3vn6T574r+aVU5tLkh1SnHDZDSTpB826DDVfqDgRJXBIZIuUlKgvyDvil5obff5EWWtDtioIUdiE9bYgVtDxSzKAQs7BY/E+tXnGIyGmjZxfTsPvBJJJOIspis5yrby7L9k97RGofgUbG1++EhBb7jFdcRGkGosJ0PtrNikkbp6HbqcQJaZ0KLMR0eaSvwSNxiiTy8kxHt1gXQT8pHwfHpVHi/OfVfZKtA8J2xKEkxpAhrbTJLSwyp0FSA5b9JUAQSL9cTEZmnzqnKTWjBne4CPbxwHXF1GyUKUqyUgN67nSRcDY4cpFdZqyDLzPURUGVu7ojr5DzJJ5dkoGgWGy9wb4lUzP0WoxFyqm1JhynnFvRJLiVqRrWdCWlgApISeilKF8ZXSpFApba21oWhkIUldtWpJsehOIzxjvsvD9igcXH3h6/Odv11q/n0zyxORPrFPblri2zCHecy6WnGQ+nnoWNIVe5OKRCDbRNlPvK0c2cp9Sny4B+ataEf+drYm19CMzQosBn38lbqGQ0lQsOadGo3+BqucMNJYZbZSbhCQL/ff0s99HFUZLE59NtlK1jwrfBIAJJsBuSccauJNLNepVQynKYntNxVx6g40DbUhzW2k90Yy9xarWZ2mqLBp6TJUm6locCllPzpTjhrRVJrTU+UxaTZ50rUBq0gaP5X6Rmi++0yP3KAPjGlP+IxVqf7lhKmU3ebG3cfWOJ3FWlUenVSg0V/3NXdbXHWtAu3G1fpUSr5WMUSZTo8321Zi6orihqJTe3fuMQct5ep7EepUJhprmgLQ6lCVdRbYkHFQzVPyxW6FU4rqxT4rzcWai1+a2+NS7j7FgRinVKBVorc2mzGpMdfRxpQUPB+jijQSwkynk2WoWQD8J+/J9eJ/Ayj55W/WKQ8im11YutwgliSf+oHQ/7jGZuFHEPLPOYqmWH3Y6f7cuMgyWgO5axAm5sy5KZepFQfW6h9DqoklTiWXAnq3oSQAFYrDObOI1NobOVsjVTmr/qy0utcltt/8NBed0osm17/ACMcJeCTuQ9FUrtXXIqBB0w4zjgit3+HCd3SPX//xAAiEQACAgEEAgMBAAAAAAAAAAABAgMRAAQQEkEFMRMUIWH/2gAIAQIBAT8AyfXskrIgFLmmn+wnKqO87H5JCaBDnrPHmVuZNBAK9d7EhRZzWMvIl4/0+j1njiDB/SxJ2IDCiMkVRa1YPRyCGONRxG3/xAAhEQADAAAGAgMAAAAAAAAAAAABAgMABAUQEUESITJCwf/aAAgBAwEBPwDGW0xKQStHPLjkAYzeWOWqZ+XO+URDGSgsQZqT7/MaosECBSTUt2fqBvppd5gSt6X5J2MaryM149BABursjBkYgjsYtZ70NKHliBt//9k="
+          src="/img/img1-1x.jpg"
           alt="John Wax"
           width="56"
           height="56"
@@ -331,7 +340,26 @@
       <li class="reviews-item">
         <img
           class="reviews-foto"
-          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFwBBAQEBAQEBAQEBAYGBQYGCAcHBwcIDAkJCQkJDBMMDgwMDgwTERQQDxAUER4XFRUXHiIdGx0iKiUlKjQyNEREXP/CABEIADgAOQMBIgACEQEDEQH/xAAaAAACAwEBAAAAAAAAAAAAAAAGBwQFCAAJ/9oACAEBAAAAAN/QkSgNAvGw6ID5fYk9ollmIjOWGdYNicbA8dJSDQhsyOsr1ermKeExsDeTwDrB34J9HdKdnHz+CHtprW3f/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAEFBAIG/9oACAECEAAAACPt1rzm2uS1VHy//8QAGQEAAgMBAAAAAAAAAAAAAAAAAAUBAgQG/9oACAEDEAAAABxiyT1ONDDa6crY/8QAMRAAAgECBAUDAgQHAAAAAAAAAQIDBAUABhESBxMhMUEQUXEyUggUQmEVFkRjgZGS/9oACAEBAAE/AMV11ipNYogHm8jwvz++OInFaoy2XoaGBqy5sgbZqRDFu7b9vUnFJxj4nS1c9MUt8h2GpTdAVkKJ9aJodCBjh3xPqczIsU0T0tWE3EAkxsR+zYoL2kxWGqARz0Dj6T63euNJCIojpI/b9h74qJxBDPUOdRGjSN8KNcQxvfrxPUVI1EtRI8jnyQdDiTL1sNRSV60CF6bUjavXaRtYf6OKC0Wy1TLNbVGkj8yNl/S46j/B7HCkMoYdiNRiyV5mU0k3VwNUJ8qPB+PS6TGeunbXorbB8L0xfVlazXNYdN5p5NNfjri5Q30w0j2KgWSB9snNaSRD3BGnLIPnXFumvtxydPKlEDc42EfKd20+SQdTjLlPmCktQlvVPSLygpIpty7VPfo32/JxTamng1+wYppjTzwzD9DA41HvibXnS6997YdFkRkcaqw0IwaR7NP+RddkUalIwQVARSQv1AeB46e2Mp3mi5EtJ/MVGWMrsoTu2vYE69Tie9U0sptsWySUIN6k6AkjUL7n4GLc9WEMVxqIGqWZnSOJDHti6ADQsxOnk+mk3scXSEwV066dGbePhuvpxQuNutFBaaqqcLVVNctHTjUDeWRnIP8AzikztYrYjrBQSm4uSsagaKWb3OMrU701H/EaiZeY+6SpncFiup1IjA64s11tl1klNLDMlTCib/zFO0Eu1+xKyAMAdPOKaIzzxQj9TAH4xtX7RjipS5xkyfc63Ia07ZgpUMkEU0fM5sY+tEBIHM8prjMPFLiVdpqiG8ZtuyOGZJIElalQMp6q0cWwAjDXO4vNFUTV08k0UglR5JGdlcHXUE4yMy5ploLo6AGOJZpAPu7YzVmxuHWQ7rmSBYpK08uCiim6qZ5ToCR5CjVsZq4h5szhd4b7fLoz1sESwQvCog2Rhi2g5enlsfhmyjnmgsE2as9Xq6zSXGNBbbfXTvJyKbvziJCdGk9eM34acv8AEmapzDYp47PmdwTJKVJpas/3wOze7rjNvA7ink2aVLtlCukp1/q6FDV05HuXh12/DYtl2v2X7nS1ttqamlr6bRY+hBC/aVPdT5B6HF8puMfHNrFS0GSa5KWkiCuUhNNRGc9DMZJtFxwf/ChacpVVLmPPtTBd7tCVkgoYgTRU7+77+sz+v//EACARAAIBBAIDAQAAAAAAAAAAAAECEQADBBASMQUTUUL/2gAIAQIBAT8Ap81+bQYHQrEvG6hDdrphKkfRTypKsokGvHuPZcExIEDefZAZbn0QawLLz7PxuAexSqqLxUQNf//EACERAQABAgcAAwAAAAAAAAAAAAECAAMEBRAREiExE1GB/9oACAEDAQE/AKt4GLCK++tYuwWZnE6kaDsj9NWoEwlCSiVmdhLNuQ9xf1NF2rLcTIJWxrMcTBj8ffN17i7ilSk3HnN3dP/Z"
+          src="/img/andrew.klimkovskyi@1x.jpg"
+          alt="Andrew Klimkovskyi"
+          width="56"
+          height="56"
+        />
+
+        <div class="reviews-wrapper">
+          <h3 class="reviews-user">Andrew Klimkovskyi</h3>
+          <p class="reviews-message">
+            These vegetables are my secret to delicious and healthy meals. The
+            quality is always at the highest level, the aroma and taste are
+            enchanting. I advise every fan of real products!
+          </p>
+        </div>
+      </li>
+
+      <li class="reviews-item">
+        <img
+          class="reviews-foto"
+          src="/img/Img2-1x.jpg"
           alt="Victoria Romashenko"
           width="56"
           height="56"
@@ -344,10 +372,66 @@
           is impeccable!
         </p>
       </li>
+
       <li class="reviews-item">
         <img
           class="reviews-foto"
-          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFwBBAQEBAQEBAQEBAYGBQYGCAcHBwcIDAkJCQkJDBMMDgwMDgwTERQQDxAUER4XFRUXHiIdGx0iKiUlKjQyNEREXP/CABEIADgAOQMBIgACEQEDEQH/xAAaAAACAwEBAAAAAAAAAAAAAAAGCAAEBwUD/9oACAEBAAAAAH+pLmvLa610JUDEL03VtRK+mIj6B6js+pWTYH8kuIdp0eEfM56hDTaF3sbV0tV5jC0eb4ni/JHULWxYqf/EABgBAAMBAQAAAAAAAAAAAAAAAAIEBQMA/9oACAECEAAAAOT316S22M0qQztXv//EABoBAAICAwAAAAAAAAAAAAAAAAMEBQYAAQL/2gAIAQMQAAAAx9YO56ORNMHrfdqVrf8A/8QAMhAAAgIBAgQEBAUEAwAAAAAAAQMCBAUAEQYHEiEQEzFBIlFhcQgUFUJSFzI0YmOBsf/aAAgBAQABPwDV7KqqbqUBN3uPaP3+uucHO/8Ap/CtTWk3ctaVJq0dfQpUPQTZ06wHP7j7IXfPeypKBn1FBQIwEflAj4idcC8xE8VVXTpOmm3W6Q9Bl1Dv6Sjv6xOqGbg4xTaAhM9hMf2nxy941EhSjsyfp9B89Ekkk64/xtTP8acSZXIOm4TvMrpkyXwwSg+WIx+nbXB3B/DyKdXqoJdBxEQJASA0OGsbh8phM9ha8K00ujWfBO0INRYPQesD16SRIeGEvl0TUd3mBvAn3iPY/bwyji+8+W/aMugfaPbWWZaVism2iQLUKjpIJG+zBAmPb76ymNyGUUp8GxMjCbWebCBJmyZmdwQQNcr8VlbvCXE1KV2JfDyxXZMdUVxO+4GsDhXY/AKTbtfFEqk1wX07lchIkAevpqBkYQMvUgE6rONd6XD9kgdbj56dv5zd/Xrl/wC+HMpLMBxbnMTjKqqqJ1UuqAgkGDY/GYb/AO++uU1bMwwmQUu1FgnCRYgrHmMAGwgJEiIGuDLV+1WpUcgveaC1m59RAEwiD9fHZ3yOsokovPjt2lLrH2l38PxCW6mRyWIdh76G26SmKZJLIs6JifdU9vQjXLHJ8RlohQoGTX/DOR7LAH11w9XRh6cDdtQ/MPK4TbI9MTM9owjv9TsPCsovepI/dIA/bXTH+I1lsf8AmURkmO7ljt9R7jXNLn5RxUb/AA5wfObsoOpLrxBC65HaQgD3lMaw+YU9KqVye205HrPv1kyJP11y0yNTFocqDUtiWHy2wkDuD7dtczOLkUMRQwldolcyDlyOx7wUmQmZf9kAawvOLKYB1KhllfqFR0GGMjLZ8DDv2ke0hrhFkchiqWdlVsVjcRFik2YeW5cJfzj7E+PN78PGA4/e7iHCuhiuJJAmcyCa1s/8wHof9xrN8m+ZPBmQWzNcJ2bNVUxLzKsDaqTA/nJPcA/XXCuXbiPzdK3GaiiwLEV7EHpl2IAP2GqHB/MfmJm/1Khw9k/JbMKU2UJIWtQ9y2fSBrl3+H6nw/Yp5rjW/HL5Gs3z6lUf41efzJIBafH/xAAgEQACAgICAgMAAAAAAAAAAAABAgADBBEQIRJBEyMx/9oACAECAQE/AJZkhSQAZVZ8i75cMCVYjozFDaZiejw7qg2xllvkWJUdynMSsiqwa9gwHYBEZQw0wlyBX8R+THx6z9jDZ9b4/8QAJREAAgEDAgYDAQAAAAAAAAAAAQIDAAQREiEFEBMUIkEWMVGh/9oACAEDAQE/AKhs2dQxIGRU0XSfHrkDgg1FoZRIindavWTWEUbrygt5blwkS5/T6Fdo0PgGbx/tfH7q9tXvrUhiH0dM7E/W4NMpVirDBBwaimkgcSRMVYVbSm5szLIAG1AbZriXE7qFexgYRxaQTpyGOeX/2Q=="
+          src="/img/roman.skorohod@1x.jpg"
+          alt="Roman Skorohod"
+          width="56"
+          height="56"
+        />
+
+        <div class="reviews-wrapper">
+          <h3 class="reviews-user">Roman Skorohod</h3>
+          <p class="reviews-message">
+            These vegetables are my secret to delicious and healthy meals. The
+            quality is always at the highest level, the aroma and taste are
+            enchanting. I advise every fan of real products!
+          </p>
+        </div>
+      </li>
+
+      <li class="reviews-item">
+        <img
+          class="reviews-foto"
+          src="/img/darya.karnaykh@1x.jpg"
+          alt="Darya Karnaykh"
+          width="56"
+          height="56"
+        />
+
+        <div class="reviews-wrapper">
+          <h3 class="reviews-user">Darya Karnaykh</h3>
+          <p class="reviews-message">
+            These vegetables are my secret to delicious and healthy meals. The
+            quality is always at the highest level, the aroma and taste are
+            enchanting. I advise every fan of real products!
+          </p>
+        </div>
+      </li>
+      <li class="reviews-item">
+        <img
+          class="reviews-foto"
+          src="/img/katerina.koroleva1@1x.jpg"
+          alt="Katerina Koroleva"
+          width="56"
+          height="56"
+        />
+
+        <div class="reviews-wrapper">
+          <h3 class="reviews-user">Katerina Koroleva</h3>
+          <p class="reviews-message">
+            These vegetables are my secret to delicious and healthy meals. The
+            quality is always at the highest level, the aroma and taste are
+            enchanting. I advise every fan of real products!
+          </p>
+        </div>
+      </li>
+      <li class="reviews-item">
+        <img
+          class="reviews-foto"
+          src="/img/Img3-1x.jpg"
           alt="Ihor Trachuk"
           width="56"
           height="56"
@@ -359,7 +443,148 @@
           It is now my main vegetable supplier.
         </p>
       </li>
-    </ul>
+    </ul> -->
+    <!-- ===========Slider============= -->
+    <div class="swiper mySwiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <div class="reviews-item">
+            <img
+              class="reviews-foto"
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFwBBAQEBAQEBAQEBAYGBQYGCAcHBwcIDAkJCQkJDBMMDgwMDgwTERQQDxAUER4XFRUXHiIdGx0iKiUlKjQyNEREXP/CABEIADgAOQMBIgACEQEDEQH/xAAaAAACAwEBAAAAAAAAAAAAAAAGBwMFCAQA/9oACAEBAAAAAN/cQBRXx3Ye5AxRMhdM82sxGoyExRPRpKbA8WVGJRv6UjrK7FfK39ATG3PlnIug5NLm9r5LYzX+gHy/Pf/EABkBAQADAQEAAAAAAAAAAAAAAAQAAQUCBv/aAAgBAhAAAACZTEzzzdSsRr6L2j//xAAZAQACAwEAAAAAAAAAAAAAAAAABQIEBgP/2gAIAQMQAAAAHNCqatamNBRWkp8v/8QAMBAAAQMCBAUEAQMFAQAAAAAAAQIDBAURAAYSIQcTMWFxEBRBUTIiQrEjM1JiY6L/2gAIAQEAAT8AxOqrUS7TQC3vn6T574r+aVU5tLkh1SnHDZDSTpB826DDVfqDgRJXBIZIuUlKgvyDvil5obff5EWWtDtioIUdiE9bYgVtDxSzKAQs7BY/E+tXnGIyGmjZxfTsPvBJJJOIspis5yrby7L9k97RGofgUbG1++EhBb7jFdcRGkGosJ0PtrNikkbp6HbqcQJaZ0KLMR0eaSvwSNxiiTy8kxHt1gXQT8pHwfHpVHi/OfVfZKtA8J2xKEkxpAhrbTJLSwyp0FSA5b9JUAQSL9cTEZmnzqnKTWjBne4CPbxwHXF1GyUKUqyUgN67nSRcDY4cpFdZqyDLzPURUGVu7ojr5DzJJ5dkoGgWGy9wb4lUzP0WoxFyqm1JhynnFvRJLiVqRrWdCWlgApISeilKF8ZXSpFApba21oWhkIUldtWpJsehOIzxjvsvD9igcXH3h6/Odv11q/n0zyxORPrFPblri2zCHecy6WnGQ+nnoWNIVe5OKRCDbRNlPvK0c2cp9Sny4B+ataEf+drYm19CMzQosBn38lbqGQ0lQsOadGo3+BqucMNJYZbZSbhCQL/ff0s99HFUZLE59NtlK1jwrfBIAJJsBuSccauJNLNepVQynKYntNxVx6g40DbUhzW2k90Yy9xarWZ2mqLBp6TJUm6locCllPzpTjhrRVJrTU+UxaTZ50rUBq0gaP5X6Rmi++0yP3KAPjGlP+IxVqf7lhKmU3ebG3cfWOJ3FWlUenVSg0V/3NXdbXHWtAu3G1fpUSr5WMUSZTo8321Zi6orihqJTe3fuMQct5ep7EepUJhprmgLQ6lCVdRbYkHFQzVPyxW6FU4rqxT4rzcWai1+a2+NS7j7FgRinVKBVorc2mzGpMdfRxpQUPB+jijQSwkynk2WoWQD8J+/J9eJ/Ayj55W/WKQ8im11YutwgliSf+oHQ/7jGZuFHEPLPOYqmWH3Y6f7cuMgyWgO5axAm5sy5KZepFQfW6h9DqoklTiWXAnq3oSQAFYrDObOI1NobOVsjVTmr/qy0utcltt/8NBed0osm17/ACMcJeCTuQ9FUrtXXIqBB0w4zjgit3+HCd3SPX//xAAiEQACAgEEAgMBAAAAAAAAAAABAgMRAAQQEkEFMRMUIWH/2gAIAQIBAT8AyfXskrIgFLmmn+wnKqO87H5JCaBDnrPHmVuZNBAK9d7EhRZzWMvIl4/0+j1njiDB/SxJ2IDCiMkVRa1YPRyCGONRxG3/xAAhEQADAAAGAgMAAAAAAAAAAAABAgMABAUQEUESITJCwf/aAAgBAwEBPwDGW0xKQStHPLjkAYzeWOWqZ+XO+URDGSgsQZqT7/MaosECBSTUt2fqBvppd5gSt6X5J2MaryM149BABursjBkYgjsYtZ70NKHliBt//9k="
+              alt="John Wax"
+              width="56"
+              height="56"
+            />
+
+            <div class="reviews-wrapper">
+              <h3 class="reviews-user">John Wax</h3>
+              <p class="reviews-message">
+                These vegetables are my secret to delicious and healthy meals.
+                The quality is always at the highest level, the aroma and taste
+                are enchanting. I advise every fan of real products!
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="reviews-item">
+            <img
+              class="reviews-foto"
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFwBBAQEBAQEBAQEBAYGBQYGCAcHBwcIDAkJCQkJDBMMDgwMDgwTERQQDxAUER4XFRUXHiIdGx0iKiUlKjQyNEREXP/CABEIADgAOQMBIgACEQEDEQH/xAAaAAACAwEBAAAAAAAAAAAAAAAGBwQFCAAJ/9oACAEBAAAAAN/QkSgNAvGw6ID5fYk9ollmIjOWGdYNicbA8dJSDQhsyOsr1ermKeExsDeTwDrB34J9HdKdnHz+CHtprW3f/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAEFBAIG/9oACAECEAAAACPt1rzm2uS1VHy//8QAGQEAAgMBAAAAAAAAAAAAAAAAAAUBAgQG/9oACAEDEAAAABxiyT1ONDDa6crY/8QAMRAAAgECBAUDAgQHAAAAAAAAAQIDBAUABhESBxMhMUEQUXEyUggUQmEVFkRjgZGS/9oACAEBAAE/AMV11ipNYogHm8jwvz++OInFaoy2XoaGBqy5sgbZqRDFu7b9vUnFJxj4nS1c9MUt8h2GpTdAVkKJ9aJodCBjh3xPqczIsU0T0tWE3EAkxsR+zYoL2kxWGqARz0Dj6T63euNJCIojpI/b9h74qJxBDPUOdRGjSN8KNcQxvfrxPUVI1EtRI8jnyQdDiTL1sNRSV60CF6bUjavXaRtYf6OKC0Wy1TLNbVGkj8yNl/S46j/B7HCkMoYdiNRiyV5mU0k3VwNUJ8qPB+PS6TGeunbXorbB8L0xfVlazXNYdN5p5NNfjri5Q30w0j2KgWSB9snNaSRD3BGnLIPnXFumvtxydPKlEDc42EfKd20+SQdTjLlPmCktQlvVPSLygpIpty7VPfo32/JxTamng1+wYppjTzwzD9DA41HvibXnS6997YdFkRkcaqw0IwaR7NP+RddkUalIwQVARSQv1AeB46e2Mp3mi5EtJ/MVGWMrsoTu2vYE69Tie9U0sptsWySUIN6k6AkjUL7n4GLc9WEMVxqIGqWZnSOJDHti6ADQsxOnk+mk3scXSEwV066dGbePhuvpxQuNutFBaaqqcLVVNctHTjUDeWRnIP8AzikztYrYjrBQSm4uSsagaKWb3OMrU701H/EaiZeY+6SpncFiup1IjA64s11tl1klNLDMlTCib/zFO0Eu1+xKyAMAdPOKaIzzxQj9TAH4xtX7RjipS5xkyfc63Ia07ZgpUMkEU0fM5sY+tEBIHM8prjMPFLiVdpqiG8ZtuyOGZJIElalQMp6q0cWwAjDXO4vNFUTV08k0UglR5JGdlcHXUE4yMy5ploLo6AGOJZpAPu7YzVmxuHWQ7rmSBYpK08uCiim6qZ5ToCR5CjVsZq4h5szhd4b7fLoz1sESwQvCog2Rhi2g5enlsfhmyjnmgsE2as9Xq6zSXGNBbbfXTvJyKbvziJCdGk9eM34acv8AEmapzDYp47PmdwTJKVJpas/3wOze7rjNvA7ink2aVLtlCukp1/q6FDV05HuXh12/DYtl2v2X7nS1ttqamlr6bRY+hBC/aVPdT5B6HF8puMfHNrFS0GSa5KWkiCuUhNNRGc9DMZJtFxwf/ChacpVVLmPPtTBd7tCVkgoYgTRU7+77+sz+v//EACARAAIBBAIDAQAAAAAAAAAAAAECEQADBBASMQUTUUL/2gAIAQIBAT8Ap81+bQYHQrEvG6hDdrphKkfRTypKsokGvHuPZcExIEDefZAZbn0QawLLz7PxuAexSqqLxUQNf//EACERAQABAgcAAwAAAAAAAAAAAAECAAMEBRAREiExE1GB/9oACAEDAQE/AKt4GLCK++tYuwWZnE6kaDsj9NWoEwlCSiVmdhLNuQ9xf1NF2rLcTIJWxrMcTBj8ffN17i7ilSk3HnN3dP/Z"
+              alt="Victoria Romashenko"
+              width="56"
+              height="56"
+            />
+
+            <h3 class="reviews-user">Victoria Romashenko</h3>
+            <p class="reviews-message">
+              I love how fast and fresh the vegetables are delivered. Salads
+              always turn out so appetizing, and soups are real masterpieces.
+              The quality is impeccable!
+            </p>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="reviews-item">
+            <img
+              class="reviews-foto"
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFwBBAQEBAQEBAQEBAYGBQYGCAcHBwcIDAkJCQkJDBMMDgwMDgwTERQQDxAUER4XFRUXHiIdGx0iKiUlKjQyNEREXP/CABEIADgAOQMBIgACEQEDEQH/xAAaAAACAwEBAAAAAAAAAAAAAAAGCAAEBwUD/9oACAEBAAAAAH+pLmvLa610JUDEL03VtRK+mIj6B6js+pWTYH8kuIdp0eEfM56hDTaF3sbV0tV5jC0eb4ni/JHULWxYqf/EABgBAAMBAQAAAAAAAAAAAAAAAAIEBQMA/9oACAECEAAAAOT316S22M0qQztXv//EABoBAAICAwAAAAAAAAAAAAAAAAMEBQYAAQL/2gAIAQMQAAAAx9YO56ORNMHrfdqVrf8A/8QAMhAAAgIBAgQEBAUEAwAAAAAAAQMCBAUAEQYHEiEQEzFBIlFhcQgUFUJSFzI0YmOBsf/aAAgBAQABPwDV7KqqbqUBN3uPaP3+uucHO/8Ap/CtTWk3ctaVJq0dfQpUPQTZ06wHP7j7IXfPeypKBn1FBQIwEflAj4idcC8xE8VVXTpOmm3W6Q9Bl1Dv6Sjv6xOqGbg4xTaAhM9hMf2nxy941EhSjsyfp9B89Ekkk64/xtTP8acSZXIOm4TvMrpkyXwwSg+WIx+nbXB3B/DyKdXqoJdBxEQJASA0OGsbh8phM9ha8K00ujWfBO0INRYPQesD16SRIeGEvl0TUd3mBvAn3iPY/bwyji+8+W/aMugfaPbWWZaVism2iQLUKjpIJG+zBAmPb76ymNyGUUp8GxMjCbWebCBJmyZmdwQQNcr8VlbvCXE1KV2JfDyxXZMdUVxO+4GsDhXY/AKTbtfFEqk1wX07lchIkAevpqBkYQMvUgE6rONd6XD9kgdbj56dv5zd/Xrl/wC+HMpLMBxbnMTjKqqqJ1UuqAgkGDY/GYb/AO++uU1bMwwmQUu1FgnCRYgrHmMAGwgJEiIGuDLV+1WpUcgveaC1m59RAEwiD9fHZ3yOsokovPjt2lLrH2l38PxCW6mRyWIdh76G26SmKZJLIs6JifdU9vQjXLHJ8RlohQoGTX/DOR7LAH11w9XRh6cDdtQ/MPK4TbI9MTM9owjv9TsPCsovepI/dIA/bXTH+I1lsf8AmURkmO7ljt9R7jXNLn5RxUb/AA5wfObsoOpLrxBC65HaQgD3lMaw+YU9KqVye205HrPv1kyJP11y0yNTFocqDUtiWHy2wkDuD7dtczOLkUMRQwldolcyDlyOx7wUmQmZf9kAawvOLKYB1KhllfqFR0GGMjLZ8DDv2ke0hrhFkchiqWdlVsVjcRFik2YeW5cJfzj7E+PN78PGA4/e7iHCuhiuJJAmcyCa1s/8wHof9xrN8m+ZPBmQWzNcJ2bNVUxLzKsDaqTA/nJPcA/XXCuXbiPzdK3GaiiwLEV7EHpl2IAP2GqHB/MfmJm/1Khw9k/JbMKU2UJIWtQ9y2fSBrl3+H6nw/Yp5rjW/HL5Gs3z6lUf41efzJIBafH/xAAgEQACAgICAgMAAAAAAAAAAAABAgADBBEQIRJBEyMx/9oACAECAQE/AJZkhSQAZVZ8i75cMCVYjozFDaZiejw7qg2xllvkWJUdynMSsiqwa9gwHYBEZQw0wlyBX8R+THx6z9jDZ9b4/8QAJREAAgEDAgYDAQAAAAAAAAAAAQIDAAQREiEFEBMUIkEWMVGh/9oACAEDAQE/AKhs2dQxIGRU0XSfHrkDgg1FoZRIindavWTWEUbrygt5blwkS5/T6Fdo0PgGbx/tfH7q9tXvrUhiH0dM7E/W4NMpVirDBBwaimkgcSRMVYVbSm5szLIAG1AbZriXE7qFexgYRxaQTpyGOeX/2Q=="
+              alt="Ihor Trachuk"
+              width="56"
+              height="56"
+            />
+            <h3 class="reviews-user">Ihor Trachuk</h3>
+            <p class="reviews-message">
+              Recently tried my fresh tomatoes and peppers - amazing! The
+              authenticity of the taste, as if from the garden directly to my
+              table. It is now my main vegetable supplier.
+            </p>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="reviews-item">
+            <img
+              class="reviews-foto"
+              src="data:image/jpeg;base64,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"
+              alt="Andrew Klimkovskyi"
+              width="56"
+              height="56"
+            />
+
+            <div class="reviews-wrapper">
+              <h3 class="reviews-user">Andrew Klimkovskyi</h3>
+              <p class="reviews-message">
+                These vegetables are my secret to delicious and healthy meals.
+                The quality is always at the highest level, the aroma and taste
+                are enchanting. I advise every fan of real products!
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="reviews-item">
+            <img
+              class="reviews-foto"
+              src="data:image/jpeg;base64,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"
+              alt="Darya Karnaykh"
+              width="56"
+              height="56"
+            />
+
+            <div class="reviews-wrapper">
+              <h3 class="reviews-user">Darya Karnaykh</h3>
+              <p class="reviews-message">
+                These vegetables are my secret to delicious and healthy meals.
+                The quality is always at the highest level, the aroma and taste
+                are enchanting. I advise every fan of real products!
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="reviews-item">
+            <img
+              class="reviews-foto"
+              src="data:image/jpeg;base64,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"
+              alt="Roman Skorohod"
+              width="56"
+              height="56"
+            />
+
+            <div class="reviews-wrapper">
+              <h3 class="reviews-user">Roman Skorohod</h3>
+              <p class="reviews-message">
+                These vegetables are my secret to delicious and healthy meals.
+                The quality is always at the highest level, the aroma and taste
+                are enchanting. I advise every fan of real products!
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="reviews-item">
+            <img
+              class="reviews-foto"
+              src="data:image/jpeg;base64,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"
+              alt="Katerina Koroleva"
+              width="56"
+              height="56"
+            />
+
+            <div class="reviews-wrapper">
+              <h3 class="reviews-user">Katerina Koroleva</h3>
+              <p class="reviews-message">
+                These vegetables are my secret to delicious and healthy meals.
+                The quality is always at the highest level, the aroma and taste
+                are enchanting. I advise every fan of real products!
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
   </div>
 </section>
 
@@ -561,8 +786,34 @@
 
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          200: {
+            slidesPerView: 1,
+          },
+          // when window width is >= 480px
+          768: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 640px
+          1280: {
+            slidesPerView: 3,
+          },
+        },
+      });
     </script>
   </body>
 </html>
